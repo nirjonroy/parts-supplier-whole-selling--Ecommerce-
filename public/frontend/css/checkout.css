@@ -1,0 +1,467 @@
+.checkoutExperience2 {
+    padding: 0 25px;
+    font-size: 14px;
+    margin-bottom: 55px;
+    max-width: 1100px;
+    display: inline-block;
+    width: 100%;
+}
+.checkoutExperience2 .checkoutDelivery {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .4s ease;
+}
+.deliveryStep {
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.deliveryStep .deliveryStepTitle {
+    border-radius: 3px;
+    padding: 10px 20px;
+    height: 52px;
+    border-bottom: 1px solid #c1c1c1;
+    background: #f8f8f8;
+    font-weight: 700;
+}
+.deliveryStep .deliveryStepTitle {
+    border-radius: 3px;
+    padding: 10px 20px;
+    height: 52px;
+    border-bottom: 1px solid #c1c1c1;
+    background: #f8f8f8;
+    font-weight: 700;
+}
+.deliveryStep .deliveryStepContent {
+    padding: 20px;
+}
+.deliveryStep .deliveryStepTitle .titleLeft {
+    float: left;
+}
+.checkoutExperience2 .checkoutDelivery .deliveryStepTitle .titleLeft {
+    float: left;
+}
+.checkoutExperience2 .checkoutDelivery .deliveryStepTitle:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.checkoutExperience2 .checkoutDelivery .deliveryStepTitle .titleLeft .stepIcon {
+    margin-right: 20px;
+    float: left;
+}
+.checkoutExperience2 .checkoutDelivery .deliveryStepTitle .titleLeft h2 {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    color: #4b4b4b;
+}
+.deliveryStep .deliveryStepContent:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress {
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .wholeAddress {
+    float: right;
+    width: 100%;
+    color: #505050;
+    margin-left: 50px;
+}
+
+.deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .wholeAddress .wrap span:not(:first-child) {
+    font-weight: 500;
+}
+
+.deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .stepAction {
+    text-align: right;
+    margin-left: auto;
+}
+
+.deliveryStep .deliveryStepContent .addressComponent div button {
+    clear: both;
+}
+.deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .stepAction button {
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #fff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    padding: 5px 15px;
+    border: 1px solid #ff686e;
+    color: #ff686e;
+    border-radius: 2px;
+    text-transform: none;
+}
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter {
+    display: flex;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter .paymentMethodInstruction {
+    width: 100%;
+    text-align: left;
+    align-items: center;
+}
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter .confirmBtnContainer {
+    margin-left: auto;
+    text-align: right;
+}
+
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter .footNote {
+    color: #4a4a4a;
+    padding: 0;
+    font-style: normal;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.checkoutExperience2 .confirmBtn {
+    width: 250px;
+    background: #ff686e;
+    padding: 15px;
+    border: none;
+    outline: 0;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: -webkit-box-shadow 300ms;
+    -moz-transition: -moz-box-shadow 300ms;
+    -ms-transition: box-shadow 300ms;
+    -o-transition: box-shadow 300ms;
+    transition: box-shadow 300ms;
+}
+.checkoutExperience2 .checkoutDelivery .confirmOrder {
+    padding: 0;
+    line-height: 50px;
+    align-self: flex-start;
+    margin: 0 5px 0 auto;
+    width: 280px;
+}
+.checkoutExperience2 .checkoutDelivery .confirmOrder .placeOrderText {
+    float: left;
+    height: 100%;
+    width: 60%;
+    text-align: left;
+    padding-left: 30px;
+}
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter .termConditionText {
+    font-style: normal;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 0;
+}
+.checkoutExperience2 .checkoutDelivery .placeOrderFooter .termConditionText a {
+    color: #ff686e;
+    text-decoration: none;
+    font-weight: 700;
+}
+.checkoutExperience2 .checkoutDelivery .confirmOrder .placeOrderPrice {
+    background: #e04f54;
+    float: right;
+    height: 100%;
+    width: 40%;
+    margin-right: -5px;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+}
+
+
+.checkoutConfirmComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.checkoutExperience2 .orderSectionsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+.checkoutExperience2 .orderSection {
+    /* padding: 10px 25px; */
+    max-width: 100%;
+    min-width: 45%;
+}
+.checkoutExperience2 .orderSuccessContainer {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkoutExperience2 .orderSuccess {
+    min-width: 100%;
+    padding: 20px;
+    background-color: #ffda80;
+    color: #2f2f2f;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.checkoutExperience2 .orderSuccess .orderStatus {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.checkoutExperience2 .orderSuccessContainer .bagIconContainer {
+    margin: 10px 0;
+}
+.checkoutExperience2 .orderSuccess .estimatedDeliveryText {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 700;
+}
+.checkoutExperience2 .orderSuccess .estimatedDeliveryTime {
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.checkoutExperience2 .orderSuccess .cardContainer {
+    margin-top: 10px;
+    width: 100%;
+}
+.checkoutExperience2 .orderSuccess .paymentStatusCard {
+    width: 100%;
+    padding: 15px 18px;
+    color: #2f2f2f;
+    background-color: #fff;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.checkoutExperience2 .orderSuccess .paymentStatusCard .emphasize {
+    font-weight: 700;
+}
+
+.checkoutExperience2 .orderSuccess .paymentStatusCard .intro {
+    margin-right: auto;
+}
+.checkoutExperience2 .orderSuccess .paymentStatusCard .iconContainer {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+}
+.checkoutExperience2 .orderSuccess .paymentStatusCard .amount {
+    margin-left: 6px;
+}
+
+.checkoutExperience2 .orderSuccess .paymentStatusCard .emphasize {
+    font-weight: 700;
+}
+.checkoutExperience2 .orBlockContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.checkoutExperience2 .orBlockContainer .orBlock {
+    height: 20px;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.checkoutExperience2 .orBlockContainer .orBlock .divider {
+    height: 50%;
+    border-bottom: 1px solid #e5e5e5;
+    flex: 1;
+}
+.checkoutExperience2 .orBlockContainer .orBlock .blockText {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.checkoutExperience2 .paymentMethodsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkoutExperience2 .paymentMethodsContainer .paymentMethodsBlock {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+.checkoutConfirmComponent .inlinePaymentComponent {
+    max-width: 600px;
+}
+.checkoutConfirmComponent .inlinePaymentComponent>div {
+    padding-bottom: 15px;
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent>div {
+    padding-bottom: 15px;
+}
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods {
+    width: 100%;
+}
+
+.paymentMethodItem {
+    width: 100%;
+    font-size: 14px;
+    color: #262525;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    position: relative;
+    z-index: 2;
+}
+.paymentMethodItem .paymentMethodItemContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.paymentMethodItem .paymentMethodItemContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: row;
+}
+.paymentMethodItem .paymentMethodItemContent span {
+    margin-right: auto;
+}
+.paymentMethodItem .paymentMethodItemContent .imageContainer {
+    height: 20px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods .oldBkashContainer {
+    width: 100%;
+    padding: 0 18px;
+    font-family: inherit;
+}
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods .oldBkashContainer .linkButton {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 1px solid #262525;
+}
+.checkoutExperience2 .right {
+    min-width: 55%;
+}
+
+.checkoutExperience2 .orderSection {
+    /* padding: 10px 25px; */
+    width: 100%;
+}
+.checkoutExperience2 .orderSection .discount-section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    background-color: #fbdd97;
+    color: #039d40;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.checkoutExperience2 .orderSection .discount-section-container .discount-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}

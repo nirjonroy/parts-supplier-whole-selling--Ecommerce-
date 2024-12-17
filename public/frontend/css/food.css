@@ -1,0 +1,338 @@
+div.catalogBrowser {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+div.catalogBrowser div.loaded {
+    height: inherit;
+}
+div.catalogBrowser div.loaded div.frontPageBanners {
+    margin: 10px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+section.storiesContainer {
+    float: left;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+section.storiesContainer .storiesContent {
+    position: relative;
+    border-radius: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 5px;
+}
+section.storiesContainer .storiesContent div{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slick-slide img{
+    width: 100%;
+}
+div.catalogBrowser div.loaded section.bodyWrapper {
+    height: 100%;
+    clear: both;
+    min-width: 320px;
+    margin: 0 0 40px!important;
+}
+div.catalogBrowser .categoryHeader {
+    padding: 20px 5px 0;
+}
+div.catalogBrowser div.loaded section.bodyWrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a.category {
+    width: 200px;
+    float: left;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    text-decoration: none;
+}
+a.category div div.imageWrapper {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+a.category div div.name {
+    font-size: 16px;
+    text-align: center;
+}
+a.category div div.imageWrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+a.category div div.name {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+div.catalogBrowser .normalBanner {
+    min-height: 215px;
+    max-height: 215px;
+    text-align: center;
+    overflow: hidden;
+}
+.categoryTopBanner {
+    display: flex;
+    justify-content: center;
+}
+.fade-carousel-container {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+    overflow: hidden;
+}
+.categoryTopBanner .fade-carousel-container {
+    margin: 0;
+}
+.fade-carousel-container img {
+    position: relative;
+    max-height: 215px;
+    z-index: 1;
+    opacity: 1;
+}
+div.catalogBrowser .normalBanner img {
+    max-width: 100%;
+    max-height: 215px;
+}
+div.catalogBrowser div.categorySection {
+    height: 100%;
+}
+
+.productPane:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.productPane {
+    width: 100%;
+    margin: 0 auto;
+}
+div.catalogBrowser div.categorySection.miscCategorySection div.productPane {
+    min-height: 100%;
+}
+div.product {
+    position: relative;
+    width: 202px;
+    float: left;
+    height: 352px;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    margin-bottom: 45px;
+}
+div.product .favouriteIcon {
+    position: absolute;
+    z-index: 1;
+    right: 7px;
+    top: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
+div.product .imageWrapper {
+    width: 200px;
+    height: 307px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+div.product section.addButtonWrapper {
+    height: 37px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 6px 0;
+    text-align: center;
+    transition: all ease-in-out .15s;
+}
+div.product .imageWrapper {
+    width: 200px;
+    height: 307px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+div.product .imageWrapper .imageWrapperWrapper {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+div.product .imageWrapper .imageWrapperWrapper img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+}
+div.product div.name {
+    text-align: center;
+    color: #1a1a1a;
+    padding-top: 5px;
+    font-size: 14px;
+    height: 60px;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+}
+div.product div.subText {
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 1px;
+}
+div.product div.discountedPriceSection {
+    overflow: auto;
+    padding-top: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+div.product .imageWrapper .overlay {
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 4px;
+}
+div.product .imageWrapper .overlay.text {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    color: #fff;
+    background-color: rgba(40,40,40,.75);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-bottom: 55px;
+}
+div.product div.discountedPriceSection div.discountedPrice {
+    color: #e43215;
+    font-weight: 700;
+    font-size: 18px;
+}
+div.product div.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+div.product div.discountedPriceSection div.price {
+    margin-left: 5px;
+    margin-top: 4px;
+    text-decoration: line-through;
+    padding-top: 0;
+    font-size: 12px;
+}
+div.product .imageWrapper .overlay.text p.addText {
+    height: 100px;
+    width: 125px;
+    margin: 30px auto 0;
+    color: #fff;
+    font-size: 22px;
+    line-height: 34px;
+}
+div.product .imageWrapper .btnShowDetails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #fff;
+    text-align: center;
+    border: 0;
+    width: 100%;
+    color: #5e5e5e;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 3px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+div.product .btnShowDetails, div.product .btnShowDetailsIcon {
+    display: none;
+}
+div.product section.addButtonWrapper #svgIcon.express, div.product section.addButtonWrapper #svgIcon.fifteenMinute, div.product section.addButtonWrapper #svgIcon.regular {
+    fill: #fd8181;
+}
+div.product section.addButtonWrapper #svgIcon {
+    margin-right: 5px;
+    display: inline;
+}
+div.product section.addButtonWrapper p {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+div.product section.addButtonWrapper p.buyText {
+    display: inline;
+    margin-bottom: 0;
+    padding-top: 9px;
+    transition: all ease-in-out .15s;
+    height: 35px;
+    color: #fe8280;
+}
+div.product .imageWrapper:active .overlay.text, div.product .imageWrapper:hover .overlay.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.product .imageWrapper:active .overlay, div.product .imageWrapper:hover .overlay {
+    opacity: 1;
+}
+div.product .imageWrapper .btnShowDetails:hover {
+    background: #efefef;
+}

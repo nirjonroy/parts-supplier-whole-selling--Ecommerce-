@@ -1,0 +1,138 @@
+.log-register-main {
+    padding: 40px 0;
+    position: relative;
+    border-top: 1px solid #f3f3f3;
+}
+.log-register-main:before {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #f3f3f3;
+    top: 71px;
+    content: "";
+    z-index: -1;
+}
+.log-register-main .login-reg-tabs {
+    width: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+.log-register-main .login-reg-tabs .nav-tabs {
+    border-bottom: none;
+}
+.log-register-main .login-reg-tabs .tab-content {
+    padding: 34px 0;
+}
+.log-register-main .login-reg-tabs .nav-tabs .nav-item {
+    width: 45.4545454545%;
+    text-align: center;
+    margin-left: 2.2727272727%;
+    margin-right: 2.2727272727%;
+}
+.log-register-main .login-reg-tabs .nav-tabs .nav-item .nav-link {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    text-transform: capitalize;
+    letter-spacing: .4px;
+    font-family: var(--medium);
+    margin: auto 2px;
+    color: #000;
+}
+.log-register-main .login-reg-tabs .nav-tabs .nav-item .nav-link.active {
+    border-bottom: 2px solid #d41f27;
+    color: #d41f27;
+}
+.log-register-main .login-reg-tabs .tab-content .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #bcccdc;
+    height: 48px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 20px;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.log-register-main .login-reg-tabs .tab-content .login-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 100%;
+    margin: 20px 0;
+}
+.log-register-main .login-reg-tabs .tab-content a.forget-pass {
+    border-bottom: 1px solid #adafb2;
+    color: #adafb2;
+    cursor: pointer;
+    font-family: Lato,Roboto,sans-serif;
+    font-size: 12px;
+    padding-bottom: 1px;
+    transition: .25s cubic-bezier(.455,.03,.515,.955);
+    letter-spacing: .3px;
+}
+.log-register-main .login-reg-tabs .tab-content .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #bcccdc;
+    height: 48px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 20px;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav {
+    margin-top: 20px;
+    justify-content: center;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item:last-child {
+    margin-right: 0;
+}
+.log-register-main .login-reg-tabs .tab-content .terms p {
+    font-size: 10px;
+    color: #6d6f71;
+    letter-spacing: .3px;
+    line-height: 18px;
+    margin: 0;
+}

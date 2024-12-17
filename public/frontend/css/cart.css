@@ -1,0 +1,371 @@
+a{
+    text-decoration: none;
+}
+.cart-main {
+    margin: 50px 0;
+}
+.cart-main .table tr .td-image {
+    display: table-cell;
+}
+.cart-main .table thead tr td {
+    font-weight: 600;
+}
+.cart-main .table tr td {
+    vertical-align: middle;
+    min-width: 90px;
+    padding: 8px 14px;
+}
+.cart-main .table tr td.td-name {
+    min-width: 175px;
+}
+.cart-main .table tr .td-image img {
+    width: 90px;
+}
+.cart-main .table tr td.td-name a {
+    color: #2b2d42;
+}
+.cart-main .table tr td.td-qty .input-groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-collapse: separate;
+}
+.cart-main .table tr td.td-qty .input-groups .stepper {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 80px;
+    height: 100%;
+    min-height: 35px;
+    font-size: 15px;
+    transition: all .05s ease-out;
+    border: 1px solid #2b2d42;
+    margin-right: 10px;
+}
+.cart-main .table tr td.td-qty .input-group-btn {
+    width: auto;
+}
+.cart-main .table tr td.td-qty .input-groups .stepper .form-control {
+    width: 100%;
+    min-height: 28px;
+    text-align: center;
+    font-size: 13px;
+    transition: all .05s ease-out;
+    height: 100%;
+    display: flex;
+    background: #fff!important;
+    border-width: 0!important;
+    border-radius: 2px!important;
+    padding: 0 20px 0 2px;
+}
+.cart-main .table tr td.td-qty .input-groups .stepper span i:first-child {
+    border-width: 0 0 1px;
+    border-color: inherit;
+    border-style: inherit;
+}
+.cart-main .table tr td.td-qty .input-groups .stepper span i {
+    cursor: pointer;
+    width: 100%;
+    min-width: 18px;
+    background: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    transition: all .05s ease-out;
+    color: #2b2d42;
+    background-color: #ddd;
+}
+.cart-main .table tr td.td-qty .input-group-btn {
+    width: auto;
+}
+.cart-main .table tr td.td-qty .input-group-btn .btn {
+    min-width: 35px;
+    min-height: 35px;
+    position: relative;
+    background: #2b2d42;
+    padding: 0;
+    border-radius: 2px!important;
+    color: #fff;
+}
+.cart-main .table tr td.td-qty .input-group-btn .btn-remove.btn {
+    background: #d41f27;
+    margin-left: 5px;
+}
+.cart-main .cart-sidebar {
+    background: #eee;
+    padding: 20px;
+}
+.cart-main .cart-sidebar .title {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    text-align: left;
+    display: block;
+}
+.cart-main .cart-sidebar .title:after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 7px;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: auto;
+    transform: none;
+    width: 50px;
+    height: 3px;
+    background: #d41f27;
+}
+.cart-main .cart-sidebar .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cart-main .cart-sidebar .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button {
+    background: #eee;
+    border: none;
+    padding: 8px 10px 8px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button {
+    font-size: 13px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body {
+    background: #eee;
+    padding-left: 0;
+    padding-right: 0;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button:after {
+    background-image: url(../images/svg/plus.0ec5cdee.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    transform: scale(.7)!important;
+    position: absolute;
+    left: 0;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button:not(.collapsed):after {
+    background-image: url(../images/svg/minus-sign.ed262c49.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    transform: scale(.7)!important;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #bcccdc;
+    height: 48px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    font-size: 12px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    font-size: 14px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button {
+    background: #eee;
+    border: none;
+    padding: 8px 10px 8px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-button {
+    font-size: 13px;
+}
+
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-label {
+    color: #102a43;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #bcccdc;
+    height: 48px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    font-size: 12px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    font-size: 14px;
+}
+
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #fff;
+    border: 1px solid #bcccdc;
+    height: 48px;
+    /* border-radius: 4px; */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .form-control {
+    font-size: 12px;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+}
+.cart-main .cart-sidebar .accordion .accordion-item .accordion-body .continue-btn {
+    font-size: 14px;
+}
+.cart-main .cart-sidebar .table-bordered>:not(caption)>* {
+    border-color: transparent;
+}
+.cart-main .cart-sidebar .table-bordered>:not(caption)>* {
+    border-color: transparent;
+}
+.cart-main .cart-sidebar .button-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-main .cart-sidebar .button-flex a.continue-btn, .cart-main .cart-sidebar .button-flex button.continue-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    flex-basis: 48%;
+}
+.cart-main .cart-sidebar .button-flex a.continue-btn {
+    text-align: center;
+}
+.cart-main .cart-sidebar .button-flex .continue-btn {
+    flex-basis: 100%!important;
+    margin-bottom: 10px;
+}
+@media (min-width: 1025px) and (max-width: 1366px)
+{
+    .cart-main {
+        margin-top: 20px;
+    }
+    .cart-main .table tr .td-image {
+        display: table-cell;
+        min-width: 77px;
+        padding: 4px 8px;
+    }
+    .cart-main .table thead tr td {
+        font-size: 14px;
+    }
+    .cart-main .table tr .td-model, .cart-main .table tr .td-name, .cart-main .table tr td {
+        font-size: 13px;
+    }
+    .cart-main .table tr .td-image img {
+        max-width: 50px;
+    }
+    .cart-main .cart-sidebar .title {
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: hind-bold;
+    src: url(../fonts/HindSiliguri-Bold.ttf);
+}
+@font-face {
+    font-family: hind-light;
+    src: url(../fonts/HindSiliguri-Light.ttf);
+}
+@font-face {
+    font-family: hind-medium;
+    src: url(../fonts/HindSiliguri-Medium.ttf);
+}
+@font-face {
+    font-family: hind-semibold;
+    src: url(../fonts/HindSiliguri-SemiBold.ttf);
+}
+@font-face {
+    font-family: hind-regular;
+    src: url(../fonts/HindSiliguri-Regular.ttf);
+}

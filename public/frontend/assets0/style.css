@@ -1,0 +1,258 @@
+body{
+    background-color: #f6f6f6;
+}
+
+header img{
+    height: 70px;
+    width: 220px;
+    padding: 10px 20px;
+}
+.navbar .nav-link{
+    background-color: #fff;
+}
+.navbar-brand{
+    background-color: #fff;
+    padding: 10px;
+}
+.nav .nav-item{
+    padding:10px 0px 10px ;
+    font-weight: 600;
+}
+.nav-link{
+    padding-left:3px;
+    color: black;
+    font-size: 14px;
+}
+.nav-link:hover{
+    color: #ff9900;
+}
+.search_box {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    border-radius: px;
+    border-width: 0 2px 1px 0;
+    border-color: rgb(107, 107, 107);
+    border-style: solid;
+    
+  }
+
+  .search_box input {
+    border: 0;
+    background: none;
+    width: 100%;
+    height: 47px;
+    color: #9e9e9e;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 80px 0 20px;
+  }
+
+  .search_box button {
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+.search_left .search_box {
+    width: 230px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+  }
+  .search_left .search_box input {
+    height: 36px;
+  }
+.search_left .search_box button i{
+    font-size: 20px;
+  }
+.search_left .search_box button {
+    right: -2px;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+.left-sidebar{
+    border: 1px solid #ffd08a;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #ffd08a;
+  }
+  .sidebar-btn a{
+    border: 2px solid #006eff;
+    font-weight: 500;
+    color: #006eff;
+    text-decoration: none;
+    padding:10px 50px;
+    border-radius: 5px;
+  }
+.sidebar-img img{
+    height: 240px;
+    width: 100%;
+}
+.slider-bottom{
+    height: 40px;
+    padding: 8px 0px 10px;
+}
+.brand-box{
+    width: 170px;
+    height: 140px;
+    background-color: #fff;
+    padding:30px 30px 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    
+}
+.category a{
+    text-decoration: none;
+    color: black;
+}
+.category img{
+    height: 50px;
+    width: 50px;
+}
+.support-all{
+    padding-top: 30px;
+    
+}
+.support img{
+    width: 70px;
+    height: 50px;
+    padding-left: 10px;
+}
+.support p{
+    padding-left: 20px;
+}
+.support p span{
+    font-weight: 900;
+
+}
+.label_product {
+    position: absolute;
+    top: 5px;
+    left: 120px;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+    background: #fd133a;
+    border-radius:20px  5px 5px  20px ;
+  }
+  .label_product span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+  }
+
+  .product_thumb {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .product_thumb::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    z-index: 1;
+  }
+
+ .single_brand img{
+    width: 100px;
+    height: 70px;
+  }
+  .brand-header h4{
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+  }
+.content{
+    padding: 20px;
+  }
+.content p{
+    text-align: justify;
+}
+.content p span{
+    color: #CD201F;
+}
+footer{
+    background-color:#010138;
+    color: #fff;
+    padding:15px 0px;
+}
+footer .footer{
+    background-color: #120d5a;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.footer i{
+    font-size: 30px;
+    padding-top:15px ;
+    padding-right: 15px;
+}
+.footer span{
+    font-size: 20px;
+    font-weight: 500;
+    line-break: loose;
+}
+
+.social-link i.fa-facebook-f{
+    padding-right: 30px;
+    color: #3b5998;
+}
+.social-link i.fa-facebook-messenger{
+    padding-right: 30px;
+    color: #006aff;
+}
+.social-link i.fa-youtube{
+    padding-right: 30px;
+    color: #CD201F;
+}
+.social-link i.fa-instagram{
+    padding-right: 30px;
+    color: #fccc63;
+}
+.social-link i.fa-twitter{
+    padding-right: 30px;
+    color: #00acee;
+}
+.social-link i.fa-linkedin-in{
+    padding-right: 30px;
+    color: #0072b1;
+}
+.social-link i.fa-whatsapp{
+    padding-right: 30px;
+    color: #00ff55;
+}
+.footer.footer-left{
+    width: 39%;
+}
+.footer .partner a img{
+    height: 50px;
+    width: 90px;
+
+}
+.footer .payment-partner a img{
+    width: 44px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+}

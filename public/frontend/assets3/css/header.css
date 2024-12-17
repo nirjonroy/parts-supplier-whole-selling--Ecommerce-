@@ -1,0 +1,117 @@
+header img {
+    height: 70px;
+    width: 220px;
+    padding: 10px 20px;
+}
+.search-container .search_box {
+    position: relative;
+    max-width: 400px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 0;
+    border-width: 0 2px 1px 0;
+    border-color: rgb(107, 107, 107);
+    border-style: solid;
+}
+.search-container .search_box input {
+    border: 0;
+    background: none;
+    width: 100%;
+    height: 47px;
+    color: #9e9e9e;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 80px 0 20px;
+}
+.search-container .search_box button {
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.middlenav .navbar-nav li a{
+    font-size: var(--font-14);
+    font-weight: bold;
+    color: var(--black);
+    white-space: nowrap;
+    padding-right: 8px !important;
+    padding-left: 5px !important;
+}
+.middlenav .navbar-nav li:hover a{
+    color: #ca212a;
+}
+
+
+/* footer  */
+
+footer {
+    background-color: #010138;
+    color: #fff;
+    padding: 15px 0px;
+}
+footer .footer {
+    background-color: #120d5a;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.footer i {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.footer p {
+    font-size: 16px;
+}
+.footer span {
+    font-size: 20px;
+    font-weight: 600;
+    line-break: loose;
+}
+.social-link i.fa-facebook-f {
+    padding-right: 30px;
+    color: #3b5998;
+}
+.social-link i.fa-facebook-messenger {
+    padding-right: 30px;
+    color: #006aff;
+}
+.social-link i.fa-youtube {
+    padding-right: 30px;
+    color: #CD201F;
+}
+.social-link i.fa-instagram {
+    padding-right: 30px;
+    color: #fccc63;
+}
+.social-link i.fa-twitter {
+    padding-right: 30px;
+    color: #00acee;
+}
+.social-link i.fa-linkedin-in {
+    padding-right: 30px;
+    color: #0072b1;
+}
+.social-link i.fa-whatsapp {
+    padding-right: 30px;
+    color: #00ff55;
+}
+.footer .payment-partner a img {
+    width: 44px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.footer .partner a img {
+    height: 50px;
+    width: 90px;
+}

@@ -1,0 +1,391 @@
+.lightboxContainer{
+    display: none;
+}
+.lightboxContainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(0,0,0,.4);
+    overflow: auto;
+    z-index: 9999999;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.lightboxContainer .lightbox {
+    background: #fff;
+    display: block;
+    z-index: 9999999;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 5px #666;
+    box-shadow: 0 1px 5px #666;
+    margin: 50px auto;
+    max-width: 980px!important;
+    overflow: initial;
+    width: 100%;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.lightboxContainer .lightbox .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    background: 0 0;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    z-index: 999;
+}
+.lightboxContainer .lightbox .close:after, .lightboxContainer .lightbox .close:before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    margin: -1px -12px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 2px solid #afafaf;
+}
+.lightboxContainer .lightbox .close:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.lightboxContainer .lightbox .lightboxContent {
+    width: 100%;
+    padding: 20px;
+}
+.lightboxContainer .lightbox .lightboxContent::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.productDetails {
+    width: 100%;
+}
+.productDetails section.left {
+    width: 50%;
+    float: left;
+    clear: both;
+}
+.productDetails section.right {
+    float: left;
+    width: 50%;
+    padding-left: 30px;
+}
+.productDetails section.left .productImageContainer {
+    position: relative;
+}
+.productDetails section.left .pictureNavigation {
+    text-align: center;
+}
+.productDetails section.left .productImageContainer .productImage {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0 100%;
+    -webkit-background-size: 0 100%;
+}
+.productDetails section.left .productImageContainer .productImage {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0 100%;
+    -webkit-background-size: 0 100%;
+}
+.productDetails section.left .productImageContainer .zoom {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.productDetails section.left .pictureNavigation {
+    text-align: center;
+}
+.productDetails section.right div.nameAndSubtext {
+    margin-bottom: 10px;
+}
+.productDetails section.right div.nameAndSubtext h1 {
+    letter-spacing: normal;
+    word-wrap: break-word;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #000;
+    line-height: 30px;
+    margin: 0 30px 10px 0;
+}
+.productDetails section.right div.nameAndSubtext span {
+    padding-top: 0;
+    font-size: 1.4em;
+    color: #888;
+    margin: 10px 0;
+}
+.productDetails section.right div.quantityContainer div.discountedPriceSection {
+    overflow: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+}
+.productDetails section.right div.quantityContainer div.discountedPriceSection .discountedPrice {
+    font-weight: 700;
+    color: #444;
+    font-size: 2.5em;
+}
+.productDetails section.right div.quantityContainer div.discountedPriceSection div.fullPrice {
+    margin-left: 5px;
+    /* margin-top: 15px; */
+    text-decoration: line-through;
+    padding-top: 0;
+    font-weight: 700;
+}
+.productDetails section.right div.quantityContainer .discount {
+    flex: 1;
+    text-align: right;
+}
+
+.productDetails section.right div.quantityContainer .discount {
+    flex: 1;
+    text-align: right;
+}
+.productDetails section.right div.quantityContainer .discount a {
+    float: right;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0px 12px 5px 15px;
+    background: #ee4054;
+    height: 34px;
+    z-index: 2;
+}
+.productDetails section.right div.quantityContainer .discount a:before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-right: 13px solid #ee4054;
+}
+.productDetails section.right div.quantityContainer .discount a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+}
+.productDetails section.right div.quantityContainer section {
+    margin-top: 10px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor {
+    float: left;
+    overflow: hidden;
+    display: flex;
+    width: 60%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #cdcdcd;
+}
+.productDetails section.right div.quantityContainer section #buyNowButton {
+    border: 0;
+    border-radius: 3px;
+    padding: 15px 18px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,.15);
+    background-color: #fb7679;
+    outline: 0;
+    font-size: 16px;
+    width: 35%;
+    float: right;
+    height: 66px;
+}
+div.quantityContainer section div.quantityEditor button, .productDetails section.right div.quantityContainer section div.quantityEditor p, .productDetails section.right div.quantityContainer section div.quantityEditor span {
+    color: #818181;
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor button.outer {
+    width: 60px;
+    cursor: pointer;
+    outline: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0 solid #d2d1d1;
+    background: #f4f3f3;
+    box-shadow: 0 0 2px #ccc;
+    font-size: 50px;
+    line-height: 30px;
+    padding: 0 0 12px;  
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor button.outer.removeButton {
+    border-width: 0 1px 0 0;
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor .QuantityTextContainer {
+    flex: 1;
+    height: 65px;
+    padding: 10px;
+    text-align: center;
+}
+
+.productDetails section.right div.quantityContainer section div.quantityEditor .QuantityTextContainer {
+    display: inline-block;
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor .QuantityTextContainer .quantity {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    text-align: center;
+}
+.productDetails section.right div.quantityContainer section div.quantityEditor .QuantityTextContainer .inBag {
+    font-size: 12px;
+    text-align: center;
+    color: #818181;
+    font-weight: 700;
+}
+.productDetails section.right div.actionButtons {
+    text-align: center;
+    display: none;
+}
+.productDetails section.right div.divider {
+    margin: 20px;
+    height: 2px;
+    background: #f1efef;
+}
+.productDetails section.right div.actionButtons button {
+    line-height: 26px;
+    border: 0;
+    background: 0 0;
+    color: #bcbcbc;
+    cursor: pointer;
+    outline: 0;
+    padding: 0 6px;
+}
+.productDetails section.right div.details {
+    clear: both;
+    color: #333;
+    font-size: 14px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.productDetails section.right div.details p {
+    font-size: 14px;
+    padding-top: 0;
+}
+.productDetails section.right div.productFooterButtons {
+    display: none;
+    text-align: center;
+}
+.productDetails section.right div.productFooterButtons button {
+    background: 0 0;
+    border: none;
+    color: #fb7679;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.productDetails:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 768px)
+{
+    .lightboxContainer {
+        padding: 0;
+    }
+    .lightboxContainer .lightbox {
+        margin: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .lightboxContainer .lightbox .close {
+        position: fixed;
+        background-color: #f1f1f1;
+    }
+    .lightboxContainer .lightbox .lightboxContent {
+        padding-top: 40px;
+    }
+    .productDetails section.left {
+        width: 100%;
+        margin-left: 0;
+    }
+    .productDetails section.right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .productDetails section.left .productImageContainer .productImage {
+        height: 300px;
+    }
+    .productDetails section.right div.quantityContainer section {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .productDetails section.right div.actionButtons {
+        margin-top: 20px;
+    }
+    .productDetails section.right div.details {
+        overflow: inherit;
+        max-height: none;
+    }
+    .productDetails section.right div.productFooterButtons {
+        display: block;
+    }
+
+}
+.productDetails section.left .productImageContainer .productImage img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

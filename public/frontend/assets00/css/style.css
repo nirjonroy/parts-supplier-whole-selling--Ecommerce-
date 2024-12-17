@@ -1,0 +1,291 @@
+@import url(fonts.css);
+:root {
+    /* font sizes  */
+    --font-20: 20px;
+    --font-19: 19px;
+    --font-18: 18px;
+    --font-17: 17px;
+    --font-16: 16px;
+    --font-15: 15px;
+    --font-14: 14px;
+    --font-13: 13px;
+    --font-12: 12px;
+    /* colors  */
+    --black: rgb(0, 0, 0);
+    --white: rgb(247, 247, 247);
+    --blue: #0c497d;
+    --primary: #0064E4;
+    --secondary: #ff497c;
+    --muted: #ededef;
+    --yellow: #ffd08a;
+    /* fonts  */
+    --mont-black: mont-black;
+    --bold900: mont-extrabold;
+    --bold: mont-bold;
+    --regular: mont-regular;
+    --medium: mont-medium;
+    --thin: mont-thin;
+    --light: mont-light;
+    --semi: mont-semibold;
+    /* shadow  */
+    --shadow-primary: 0px 4px 10px rgba(37, 47, 63, 0.1);
+}
+
+@media (max-width: 775px) {
+    :root {
+        --font-20: 18px;
+        --font-19: 17px;
+        --font-18: 16px;
+        --font-17: 15px;
+        --font-16: 14px;
+        --font-15: 13px;
+        --font-14: 12px;
+        --font-13: 11px;
+        --font-12: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--regular);
+    /* font-size: var(--font-14); */
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sans {
+    font-family: var(--opensans);
+}
+
+.white {
+    color: white;
+}
+
+.bg-muted {
+    background: var(--muted);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.font-20 {
+    font-size: var(--font-20);
+}
+
+.font-19 {
+    font-size: var(--font-19);
+}
+
+.font-18 {
+    font-size: var(--font-18);
+}
+
+.font-17 {
+    font-size: var(--font-17);
+}
+
+.font-16 {
+    font-size: var(--font-16);
+}
+
+.font-15 {
+    font-size: var(--font-15);
+}
+
+.font-14 {
+    font-size: var(--font-14);
+}
+
+.font-13 {
+    font-size: var(--font-13);
+}
+
+.font-12 {
+    font-size: var(--font-12);
+}
+
+.black {
+    font-family: var(--mont-black);
+}
+
+.bold {
+    font-family: var(--bold);
+}
+
+.medium {
+    font-family: var(--medium);
+}
+
+.regular {
+    font-family: var(--regular);
+}
+
+.semi {
+    font-family: var(--semi);
+}
+
+.light100 {
+    font-family: var(--light100);
+}
+
+.bold900 {
+    font-family: var(--bold900);
+}
+
+.thin {
+    font-family: var(--thin);
+}
+
+.light {
+    font-family: var(--light);
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.line {
+    line-height: 1.7;
+}
+
+.line-2 {
+    line-height: 2.2;
+}
+
+.bg-black {
+    background: var(--black);
+}
+
+.primary-bg {
+    background: var(--primary);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary-bg {
+    background: var(--secondary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.bg-muted {
+    background: var(--muted);
+}
+
+.text-cap {
+    text-transform: uppercase;
+}
+
+.btn-hover {
+    transition: 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btn-hover:hover {
+    background-color: var(--secondary);
+}
+
+.nav-color {
+    transition: 0.3s;
+}
+
+.nav-color:hover {
+    color: var(--primary);
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* global css  */
+
+button:focus-visible,
+input:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+/* global css  */
+
+/* Slick Slider Customization  */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-prev {
+    left: 30px;
+    z-index: 1080;
+}
+
+.slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    position: absolute;
+    padding: 10px;
+    top: -10px;
+    background: #ffffff;
+    color: #000;
+}
+
+.slick-prev::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f104";
+    padding: 10px;
+    top: 0;
+    background: #ffffff;
+    color: #000;
+}
+
+/* Slick Slider Customization  */
+
+body ::-webkit-scrollbar,
+html ::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+body ::-webkit-scrollbar-thumb,
+html ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 9999999px;
+    min-height: 30px;
+    -webkit-border-radius: 9999999px;
+    -moz-border-radius: 9999999px;
+    -ms-border-radius: 9999999px;
+    -o-border-radius: 9999999px;
+}
+
+body ::-webkit-scrollbar-track,
+html ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 999999999px;
+    -webkit-border-radius: 999999999px;
+    -moz-border-radius: 999999999px;
+    -ms-border-radius: 999999999px;
+    -o-border-radius: 999999999px;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+.main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}

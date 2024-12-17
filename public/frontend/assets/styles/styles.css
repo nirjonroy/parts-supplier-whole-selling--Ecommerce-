@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    padding-top: 152px;
+}
+
+.tag:hover {
+    background: #000;
+    color: #ffffff !important;
+}
+
+.card-text-title:hover {
+    color: red !important;
+
+}
+
+.price-text:hover {
+    cursor: pointer !important;
+    color: red !important;
+}
+
+.atc {
+    cursor: pointer;
+}
+
+
+.navbar-toggler-icon {
+    color: red !important;
+    z-index: 1000 !important;
+}
+
+
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+    /* Remove margin for the last menu item */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #dc3545 !important;
+    border-radius: 5px;
+    /* Red background color on hover */
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.card-quanitiy {
+    cursor: pointer;
+}
+
+

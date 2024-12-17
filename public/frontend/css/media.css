@@ -1,0 +1,610 @@
+/* Extra Extra Small Device */
+@media (max-width: 320px){
+  /* .shop-layout-main .shop-grid-main .single-product .image-box {
+    min-height: 174px;
+  } */
+}
+@media (min-width: 320px){
+  /* .shop-layout-main .shop-grid-main .single-product .image-box {
+    min-height: 199px;
+  } */
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+      .city-selection-box{
+        display: none !important;
+      }
+      .logo-main{
+        display: none !important;
+      }
+      .header-notification{
+        display: none !important;
+      }
+      .loginArea{
+        display: none !important;
+      }
+      .header-main .navbar .searchArea .search-input input{
+        font-size: 14px;
+      }
+      .header-main .navbar .searchArea{
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .header-main .navbar .dotMenu{
+        display: block !important;
+      }
+      .header-main .navbar .first-toggler{
+        cursor: pointer;
+        position: fixed;
+        left: 7px;
+        top: 14px;
+        margin-left: 0;
+        padding: 0;
+        z-index: 99;
+      }
+      .modal-dialog.profile-menu{
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .header-main .navbar{
+        border-bottom: 0;
+      }
+      aside .menuWrapper{
+        top: 85px;
+        height: calc(100% - 85px);
+      }
+      .landingPage2 .landingBanner .floatingSearchBar .searchBarContainer h2 {
+        font-size: 25px;
+      }
+      .landingPage2 .landingBanner .floatingSearchBar .searchArea input {
+        font-size: 14px;
+      }
+      #product-categories .mainTile .categoryBox {
+        width: 100%;
+      }
+      .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText h3 {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+      .landingPage2 section.map {
+        height: 700px;
+      }
+      #chaldalApps .chaldalAppsContent {
+        width: 100%;
+        padding-right: 0;
+        margin: 0 auto 30px;
+        max-width: 450px;
+      }
+      #chaldalApps .chaldalAppPreview {
+        margin: auto;
+        max-width: 70%;
+      }
+      .landingPage2 #love-chaldal .mainTile .tile {
+        display: block;
+        margin: auto;
+        max-width: 500px;
+        width: 100%;
+      }
+      .landingPage2 #map .wrap .mapImage {
+        width: 100%;
+        text-align: center;
+      }
+      .landingPage2 #map .wrap .infoText {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 25px;
+      }
+      #footer .footer-banner .banner .left-area ul li {
+        display: block;
+      }
+      #footer .footer-left {
+        text-align: center;
+      }
+      #footer .footer-left .footerBottom .list-type {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      #footer .footer-left .footerBottom .list-type {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      #footer .footer-left .footerBottom .list-type p {
+        width: 100%;
+      }
+      #footer .footer-left .footerBottom .list-type ul li {
+        text-align: center;
+      }
+      div.catalogBrowser div.loaded div.frontPageBanners {
+        display: block;
+        margin: 4px!important;
+      }
+      div.catalogBrowser div.loaded section.bodyWrapper {
+        margin: 0;
+      }
+      a.category div div.imageWrapper {
+        height: 150px;
+      }
+      a.category {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+      }
+      a.category div div.name {
+        font-size: 14px;
+      }
+      div.catalogBrowser .normalBanner {
+        max-height: 150px;
+        min-height: initial;
+      }
+      .productPane {
+        width: 90%;
+      }
+      div.product {
+        width: 23%;
+        height: 250px;
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 0;
+        margin-bottom: 35px;
+      }
+      div.product {
+        width: 48%;
+      }
+      div.product .imageWrapper {
+        width: 100%;
+        height: auto;
+      }
+      div.product .favouriteIcon svg {
+        height: 20px;
+        width: 20px;
+      }
+      div.product .imageWrapper .imageWrapperWrapper {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 0;
+      }
+      div.product .imageWrapper .imageWrapperWrapper img {
+        max-width: 100%;
+        max-height: 100px;
+      }
+      div.product .imageWrapper div.discountedPriceSection div.price {
+        margin-top: 0;
+      }
+      div.product .imageWrapper .overlay.text p.addText {
+        pointer-events: none;
+        margin-top: 5px;
+        padding-top: 5px;
+        font-size: 18px;
+        width: 80%;
+      }
+      div.product .imageWrapper .btnShowDetails {
+        display: none;
+      }
+      div.product .btnShowDetailsIcon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        font-size: 25px;
+        text-decoration: none;
+      }
+      div.product .imageWrapper .btnShowDetailsIcon {
+        display: none;
+      }
+      div.product section.addButtonWrapper .buyText {
+        font-size: 15px;
+        height: 28px!important;
+      }
+      .deliveryStep .deliveryStepContent {
+        padding: 5px;
+      }
+      .deliveryStep .deliveryStepContent .addressComponent {
+        padding-left: 0;
+      }
+      .deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress {
+        padding: 10px;
+      }
+      .deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .wholeAddress {
+        margin-left: 0;
+      }
+      .checkoutExperience2 .checkoutDelivery .placeOrderFooter {
+        margin: 0;
+        padding: 0;
+      }
+      .checkoutExperience2 .checkoutDelivery .placeOrderFooter .paymentMethodInstruction {
+        text-align: center;
+      }
+      .checkoutExperience2 .checkoutDelivery .placeOrderFooter .confirmBtnContainer {
+        text-align: center;
+        margin-left: 0;
+      }
+      .checkoutExperience2 .checkoutDelivery .confirmOrder {
+        margin: 0;
+      }
+  }
+   
+  /* Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .city-selection-box{
+      display: none !important;
+    }
+    .logo-main{
+      display: none !important;
+    }
+    .header-notification{
+      display: none !important;
+    }
+    .loginArea{
+      display: none !important;
+    }
+
+    .header-main .navbar .searchArea .search-input input{
+      font-size: 14px;
+    }
+    .header-main .navbar .searchArea{
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .header-main .navbar .dotMenu{
+      display: block !important;
+    }
+    .header-main .navbar .first-toggler{
+      cursor: pointer;
+      position: fixed;
+      left: 7px;
+      top: 14px;
+      margin-left: 0;
+      padding: 0;
+      z-index: 99;
+    }
+    .header-main .navbar{
+      border-bottom: 0;
+    }
+    aside .menuWrapper{
+      top: 85px;
+      height: calc(100% - 85px);
+    }
+    .landingPage2 .landingBanner .floatingSearchBar .searchBarContainer h2 {
+      font-size: 30px;
+    }
+    .landingPage2 .landingBanner .floatingSearchBar .searchArea input {
+      font-size: 14px;
+    }
+    #product-categories .mainTile .categoryBox {
+      width: 48%;
+    }
+    .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText h3 {
+      font-size: 17px;
+      margin-bottom: 0;
+    }
+    #chaldalApps .chaldalAppsContent {
+      width: 100%;
+      padding-right: 0;
+      margin: 0 auto 30px;
+      max-width: 450px;
+    }
+    #chaldalApps .chaldalAppPreview {
+      margin: auto;
+      max-width: 50%;
+    }
+    .landingPage2 #love-chaldal .mainTile .tile {
+      display: block;
+      margin: auto;
+      max-width: 500px;
+      width: 100%;
+    }
+    .landingPage2 section.map {
+      height: 370px;
+    }
+    #footer .footer-banner .banner .left-area ul li {
+      display: block;
+    }
+    #footer .footer-left {
+      text-align: center;
+    }
+    #footer .footer-left .footerBottom .list-type {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    #footer .footer-left .footerBottom .list-type p {
+      width: 100%;
+    }
+    #footer .footer-left .footerBottom .list-type ul li {
+    text-align: center;
+    }
+    div.catalogBrowser div.loaded div.frontPageBanners {
+      display: block;
+      margin: 4px!important;
+    }
+    div.catalogBrowser div.loaded section.bodyWrapper {
+      margin: 0;
+    }
+    .productPane {
+      width: 90%;
+    }
+    div.product {
+      width: 23%;
+      height: 250px;
+      margin-right: 1%;
+      margin-left: 1%;
+      padding: 0;
+      margin-bottom: 35px;
+    }
+    div.product {
+      width: 30%;
+    }
+    div.product .imageWrapper {
+      width: 100%;
+      height: auto;
+    }
+    div.product .favouriteIcon svg {
+      height: 20px;
+      width: 20px;
+    }
+    div.product .imageWrapper .imageWrapperWrapper {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 0;
+    }
+    div.product .imageWrapper .imageWrapperWrapper img {
+      max-width: 100%;
+      max-height: 100px;
+    }
+    div.product .imageWrapper div.discountedPriceSection div.price {
+      margin-top: 0;
+    }
+    div.product .imageWrapper .overlay.text p.addText {
+      pointer-events: none;
+      margin-top: 5px;
+      padding-top: 5px;
+      font-size: 18px;
+      width: 80%;
+    }
+    div.product .imageWrapper .btnShowDetails {
+      display: none;
+    }
+    div.product .btnShowDetailsIcon {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 5px;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    div.product .imageWrapper .btnShowDetailsIcon {
+      display: none;
+    }
+    div.product section.addButtonWrapper .buyText {
+      font-size: 15px;
+      height: 28px!important;
+    }
+    .deliveryStep .deliveryStepContent {
+      padding: 5px;
+    }
+    .deliveryStep .deliveryStepContent .addressComponent {
+      margin-top: 0;
+      padding-left: 10px;
+    }
+    .deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress {
+      padding: 10px;
+    }
+    .checkoutExperience2 .checkoutDelivery .placeOrderFooter .paymentMethodInstruction {
+      text-align: right;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .header-main .addressSelectionInline{
+      display: none !important;
+    }
+    #product-categories .mainTile .categoryBox {
+      width: 48%;
+    }
+    .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText {
+      min-height: 100%;
+      background-color: rgba(255,255,255,.5);
+      padding: 10px 3px 0;
+    }
+    .landingPage2 section.map {
+      height: 370px;
+    }
+    div.catalogBrowser div.loaded section.bodyWrapper {
+      margin: 0 10px 40px!important;
+    }
+    
+  }
+  @media (max-width: 992px){
+    .langSwitch{
+      display: none !important;
+    }
+    .overlay-wrapper{
+      display: block;
+    }
+    aside .menuWrapper{
+      left: -285px;
+    }
+    .sidebar-overlay{
+      display: none;
+    }
+    .shopping_bottom_btn {
+      display: block;
+    }
+    .shopping_bottom_btn .start_shopping_btn {
+      width: 100%;
+      background: #ff6f71;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      height: 47px!important;
+      color: #fff;
+    }
+    .shoppingCartWrapper{
+      top: 0;
+      max-height: 100vh;
+      min-height: 100vh;
+      z-index: 99;
+      right: -100%;
+      width: 100%;
+    }
+    .shoppingCart{
+      width: 100%;
+      min-height: 100vh;
+    }
+    .shoppingCart div.body > div{
+      max-height: 200px;
+      min-height: auto;
+    }
+    .shoppingCartButton{
+      display: none;
+    }
+    .landingPage2 .landingBanner {
+      margin-top: -15px;
+      height: 300px;
+    }
+    .landingPage2 .landingBanner .floatingSearchBar .searchBarContainer h2 {
+      font-size: 35px;
+    }
+    .main-wrapper{
+      margin-left: 0;
+    }
+    .landingPage2 .landingBanner .floatingSearchBar .searchArea {
+      width: calc(100% - 20px);
+      min-width: 0;
+    }
+    .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText {
+      padding: 10px 3px 0;
+    }
+    .landingPage2 #map .wrap .mapImage img {
+      width: 250px;
+    }
+    .landingPage2 #map .wrap .infoText {
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+    .landingPage2 #map .wrap .infoText .mainTitle .name {
+      font-size: 30px;
+    }
+    .landingPage2 #map .wrap .infoText .section .title {
+      font-size: 25px;
+    }
+    .landingPage2 #map .wrap .infoText .section .info {
+      font-size: 30px;
+    }
+    .userRecommendation .commentsAndRating, .userRecommendation .profile {
+      width: 100%;
+    }
+    .slideContents {
+      flex-wrap: wrap;
+    }
+    .userRecommendation .commentsAndRating .comments:before {
+        top: 0;
+        left: calc(50% - 8px);
+        border-bottom: 8px solid #eee;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+    .landingPage2 #map .wrap .infoText .section .title {
+      font-size: 25px;
+    }
+    .landingPage2 #map .wrap .infoText .section .info {
+      font-size: 30px;
+    }
+    #footer .footer-banner .banner {
+      height: initial;
+      width: 100%;
+    }
+    #footer .footer-banner .banner .left-area {
+      width: 100%;
+      text-align: center;
+    }
+    #footer .footer-banner .banner .left-area {
+      width: 100%;
+      text-align: center;
+    }
+    #footer {
+      text-align: center;
+    }
+    #footer .footer-banner .banner .right-area {
+      width: 100%;
+      text-align: center;
+    }
+    #footer .footer-left {
+      width: 100%;
+      border-right: none;
+      float: none;
+    }
+    #footer .footer-right {
+      width: 100%;
+      border-left: none;
+      float: none;
+    }
+    #footer .footer-right .app-download-section .wrap {
+      float: none;
+      margin: auto;
+    }
+    #footer .footer-right .contact-section .phone-number .wrap {
+      float: none;
+      text-align: center;
+    }
+    #footer .footer-right .contact-section .phone-number .wrap {
+      float: none;
+      text-align: center;
+    }
+    #footer .footer-right .social-section ul {
+      float: none;
+      text-align: center;
+    }
+    .categoryTopBanner .fade-carousel-container {
+      max-width: 100%;
+    }
+    .deliveryStep .deliveryStepContent .addressComponent .theSelectedAddress .wholeAddress {
+      width: 70%;
+      float: none;
+    }
+    .checkoutExperience2 .checkoutDelivery .placeOrderFooter .confirmBtnContainer {
+      margin-right: 5px;
+    }
+  }
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+    .header-main .addressSelectionInline{
+      display: none !important;
+    }
+    .overlay-wrapper{
+      display: none;
+    }
+    .shopping-cart-sticky{
+      display: block;
+    }
+    .stickyCartMobile{
+      display: none;
+    }
+    .main-wrapper{
+      padding-top: 55px;
+    }
+    div.catalogBrowser div.loaded section.bodyWrapper {
+      margin: 0 10px 40px!important;
+    }
+
+  }
+  @media (min-width: 992px) and (max-width: 1199.99px){
+    
+  }
+  /* Extra Large devices (desktops, 992px and up)*/
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+  }
+  
+  /* Extra Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1400px) {
+    .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText {
+      min-height: 70%;
+    }
+  }

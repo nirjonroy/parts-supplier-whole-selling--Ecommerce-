@@ -1,0 +1,482 @@
+
+.main-wrapper .bodyTable>div {
+    height: 100%;
+}
+.landingPage2 {
+    height: inherit;
+    margin-top: -5px;
+}
+.landingPage2 .landingBanner{
+    background-size: cover;
+    height: 325px;
+    padding-top: 100px;
+}
+.landingPage2 .landingBanner .floatingSearchBar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchBarContainer {
+    margin: 0 auto;
+    display: table;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchBarContainer h2 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea {
+    padding: 10px;
+    width: 800px;
+    float: left;
+    position: relative;
+    box-sizing: content-box;
+    color: #000;
+    min-width: 100%;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea table {
+    width: 100%;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea input {
+    padding: 4px 12px;
+    width: 100%;
+    height: 40px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 6px 0 0 6px;
+    border: 0.5px solid #c8c8c8;
+    border-right: none;
+    position: relative;
+    top: 0;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea input:focus {
+    border: none;
+    outline: none;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea table .buttonCell {
+    width: 40px;
+}
+.landingPage2 .landingBanner .floatingSearchBar button {
+    height: 40px;
+    font-weight: 700;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea button {
+    border: 0.5px solid #c8c8c8;
+    border-left: none;
+    margin-left: 0;
+    background-color: #fff;
+    font-size: 25px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    padding-bottom: 4px;
+    padding-top: 0;
+}
+
+.landingPage2 .landingBanner .floatingSearchBar .searchArea table .buttonCell button {
+    position: relative;
+    top: 0;
+}
+.landingPage2 .landingBanner .floatingSearchBar .searchArea button i {
+    font-size: 22px;
+    font-weight: 600;
+    fill: #7a7a7a;
+    stroke: #7a7a7a;
+    padding: 0 2px 2px 6px;
+}
+.landingPage2 .mainContainer {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+.landingPage2 section {
+    margin-bottom: 40px;
+}
+.landingPage2 .initialLabel {
+    display: table;
+    margin: 0 auto 20px;
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+}
+.landingPage2 .initialLabel h2 {
+    color: rgba(0,0,0,.95);
+    font-weight: 300;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+.landingPage2 .mainTile {
+    display: block;
+    overflow: visible;
+    text-align: center;
+}
+.landingPage2 .mainTile a {
+    text-decoration: none;
+}
+#product-categories .mainTile .categoryBox {
+    width: 32%;
+    border: 1px solid #d4d4d4;
+    float: left;
+    margin: .5%;
+    padding: 15px 10px 15px 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#product-categories .mainTile .categoryBox .categoryName {
+    width: 80%;
+    float: left;
+    font-size: 15px;
+    line-height: 31px;
+    color: #444444;
+}
+#product-categories .mainTile .categoryBox .categoryImg {
+    width: 15%;
+    float: right;
+}
+.landingPage2 #how-to-order-chaldal {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px;
+}
+.landingPage2 #how-to-order-chaldal .how-to-slider {
+    margin-bottom: 40px;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #c5c5c5;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .8;
+    transition: opacity .6s ease;
+    border-radius: 100%; 
+}
+.carousel-indicators [data-bs-target].active {
+    background-color: rgb(255, 40, 40);
+    opacity: 1;
+}
+.landingPage2 #love-chaldal .mainTile .tile {
+    display: inline-block;
+    width: calc(95%/3);
+    position: relative;
+}
+.landingPage2 #love-chaldal .mainTile .tile .tileHeaderImg img {
+    width: 100%;
+    height: auto;
+}
+.landingPage2 #love-chaldal .mainTile .tile .tileHeaderText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    min-height: 35%;
+    background-color: rgba(255,255,255,.8);
+    border-bottom: 3px solid #fdd670;
+}
+.landingPage2 #love-chaldal .mainTile .tile .tileHeaderText h3, .landingPage2 #love-chaldal .mainTile .tile .tileHeaderText p {
+    padding: 0;
+    margin-top: 0;
+}
+.landingPage2 #love-chaldal .mainTile .tile .tileHeaderText h3 {
+    margin-bottom: 20px;
+}
+.landingPage2 #love-chaldal .mainTile .tile .tileHeaderText p {
+    margin-bottom: 10px;
+}
+.landingPage2 #feedback {
+    max-width: 1200px;
+    margin: 20px auto 60px;
+}
+.slideContents {
+    display: flex;
+    align-items: center;
+}
+.userRecommendation {
+    padding: 20px;
+}
+.userRecommendation .profile {
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+.userRecommendation .profile .profileName {
+    font-size: 18px;
+    font-weight: 200;
+    color: #353430;
+    padding: 0 15px;
+}
+.userRecommendation .commentsAndRating {
+    display: inline-block;
+    width: calc(100% - 200px);
+    position: relative;
+}
+.userRecommendation .commentsAndRating .comments {
+    background-color: #eee;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 200;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: left;
+}
+.userRecommendation .commentsAndRating .comments:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: calc(50% - 18px);
+    border-right: 8px solid #eee;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+.landingPage2 #corporate {
+    background-image: url(../images/others/banner-corporate-page.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 80px;
+}
+.landingPage2 #corporate:before {
+    content: " ";
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(left,#00728f 0,#00566b 100%);
+    background: -webkit-gradient(left top,right top,color-stop(0%,#00728f),color-stop(100%,#00566b));
+    background: -webkit-linear-gradient(left,#00728f 0,#00566b 100%);
+    background: -o-linear-gradient(left,#00728f 0,#00566b 100%);
+    background: -ms-linear-gradient(left,#00728f 0,#00566b 100%);
+    background: linear-gradient(to right,#00728f 0,#00566b 100%);
+}
+.landingPage2 .mainContainer {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+.landingPage2 #corporate .corporate-content {
+    text-align: center;
+    position: relative;
+}
+.landingPage2 #corporate .corporate-content .initialLabel h2 {
+    color: #fff;
+    margin-bottom: 0;
+}
+.landingPage2 #corporate .corporate-content .initialLabel h3 {
+    color: #fdd670;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits .corporate-benefits-item {
+    position: relative;
+    padding: 15px;
+    margin: 0 15px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 195px;
+    background-color: rgba(0,0,0,.2);
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits .corporate-benefits-item .tick {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    font-size: 18px;
+    padding: 4px;
+    background-color: #82a900;
+    border-radius: 5px;
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits .corporate-benefits-item .tick:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-left: 5px;
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits .corporate-benefits-item svg {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+.landingPage2 #corporate .corporate-content .corporate-benefits .corporate-benefits-item h4 {
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+}
+.landingPage2 #corporate .corporate-content a {
+    padding: 8px 15px 9px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff686e;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+#chaldalApps {
+    padding: 50px 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.landingPage2 section#chaldalApps {
+    margin-bottom: 0;
+}
+#chaldalApps .chaldalAppsContent {
+    padding-right: 15px;
+    text-align: center;
+    width: 70%;
+}
+#chaldalApps .chaldalAppsContent .inputGroup {
+    font-size: 16px;
+}
+div.phoneNumberLoginField {
+    margin-bottom: 25px;
+    position: relative;
+}
+#chaldalApps .chaldalAppsContent .inputGroup .phoneNumberLoginField {
+    position: relative;
+    max-width: 65%;
+    display: inline-block;
+}
+#chaldalApps .chaldalAppsContent .inputGroup .phoneNumberLoginField .input {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#chaldalApps .chaldalAppsContent .inputGroup input[type=tel] {
+    background-color: #eee;
+    border: 2px solid #eee;
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 13px 13px 13px 45px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#chaldalApps .chaldalAppsContent .inputGroup .submit-loading, #chaldalApps .chaldalAppsContent .inputGroup input[type=submit] {
+    background-color: #ff686e;
+    border: 0;
+    border-radius: 0 6px 6px 0;
+    color: #fff;
+    outline: 0;
+    max-width: 30%;
+    padding: 15px 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#chaldalApps .chaldalAppsContent .appButtonGroup {
+    margin-top: 20px;
+}
+#chaldalApps .chaldalAppsContent .appButtonGroup>a {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 74px;
+    width: auto;
+    margin: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#chaldalApps .chaldalAppsContent .appButtonGroup>a>img {
+    height: 100%;
+    width: auto;
+}
+#chaldalApps .chaldalAppPreview {
+    align-self: flex-end;
+    width: 30%;
+    height: auto;
+}
+.landingPage2 section.map {
+    width: 100%;
+    background: #3a3a3a !important;
+    margin-bottom: initial!important;
+    height: 500px;
+}
+.landingPage2 #map .wrap {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.landingPage2 #map .wrap .mapImage {
+    float: left;
+}
+.landingPage2 #map .wrap .mapImage img {
+    width: 350px;
+}
+
+.landingPage2 #map .wrap .infoText {
+    margin-top: 40px;
+    margin-right: 40px;
+    text-align: center;
+    float: right;
+}
+.landingPage2 #map .wrap .infoText .mainTitle {
+    color: #fdd66f;
+    font-weight: 700;
+}
+.landingPage2 #map .wrap .infoText .section {
+    margin-top: 10px;
+    font-weight: 700;
+}
+.landingPage2 #map .wrap .infoText .mainTitle .name {
+    font-size: 35px;
+}   
+.landingPage2 #map .wrap .infoText .section .title {
+    font-size: 35px;
+    color: #fff;
+}
+.landingPage2 #map .wrap .infoText .section .info {
+    font-size: 40px;
+    color: #fdd66f;
+}
