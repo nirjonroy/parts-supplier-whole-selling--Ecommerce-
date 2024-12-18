@@ -2,95 +2,76 @@
 <html>
 <head>
     <title>Mobile Parts Supplier</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-<div class="container">
-
-    <h1>Mobile Parts Supplier</h1>
-    <p>To confirm Order Make payment</p>
-
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-default credit-card-box">
-                <div class="panel-heading display-table" >
-                        <h3 class="panel-title" >Payment Details</h3>
-                </div>
-                <div class="panel-body">
-
-                    @if (Session::has('success'))
+    <div class="bg-white shadow-lg rounded-lg w-full max-w-lg p-6">
+        <h1 class="text-2xl font-semibold text-blue-600 mb-4">Mobile Parts Supplier</h1>
+        @if (Session::has('success'))
                         <div class="alert alert-success text-center">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                             <p>{{ Session::get('success') }}</p>
                         </div>
                     @endif
+        <p class="text-gray-700 mb-6">To confirm your order, please make a payment below.</p>
 
-                    <form
-                            role="form"
-                            action="{{ route('stripe.post') }}"
-                            method="post"
-                            class="require-validation"
-                            data-cc-on-file="false"
-                            data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
-                            id="payment-form">
-                        @csrf
+        <form class="space-y-4 require-validation"
+        role="form"
+        action="{{ route('stripe.post') }}"
+        method="post"
+        data-cc-on-file="false"
+        data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
+        id="payment-form"
+        >
+        @csrf
+            <!-- Name on Card -->
+            <div>
+                <label for="name-on-card" class="block text-sm font-medium text-gray-700">Name on Card</label>
+                <input type="text" required class="mt-1 w-full border rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
 
-                        <div class='form-row row'>
-                            <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>Name on Card</label> <input
-                                    class='form-control' size='4' type='text'>
-                            </div>
-                        </div>
+            <!-- Card Number -->
+            <div>
+                <label for="card-number" class="block text-sm font-medium text-gray-700">Card Number</label>
+                <input type="text" id="card-number"  required class="mt-1 w-full border rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 card-number">
+            </div>
 
-                        <div class='form-row row'>
-                            <div class='col-xs-12 form-group card required'>
-                                <label class='control-label'>Card Number</label> <input
-                                    autocomplete='off' class='form-control card-number' size='20'
-                                    type='text'>
-                            </div>
-                        </div>
+            <!-- CVC -->
+            <div>
+                <label for="cvc" class="block text-sm font-medium text-gray-700">CVC</label>
+                <input type="text" id="cvc" placeholder="ex. 311" required class="mt-1 w-full border rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 card-cvc">
+            </div>
 
-                        <div class='form-row row'>
-                            <div class='col-xs-12 col-md-4 form-group cvc required'>
-                                <label class='control-label'>CVC</label> <input autocomplete='off'
-                                    class='form-control card-cvc' placeholder='ex. 311' size='4'
-                                    type='text'>
-                            </div>
-                            <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Month</label> <input
-                                    class='form-control card-expiry-month' placeholder='MM' size='2'
-                                    type='text'>
-                            </div>
-                            <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Year</label> <input
-                                    class='form-control card-expiry-year' placeholder='YYYY' size='4'
-                                    type='text'>
-                            </div>
-                        </div>
+            <!-- Expiration Month -->
+            <div>
+                <label for="expiration-month" class="block text-sm font-medium text-gray-700">Expiration Month</label>
+                <input type="text" id="expiration-month" placeholder="MM" required class="mt-1 w-full border rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 card-expiry-month">
+            </div>
 
-                        <div class='form-row row'>
-                            <div class='col-md-12 error form-group hide'>
-                                <div class='alert-danger alert'>Please correct the errors and try
-                                    again.</div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="total_amount" value="{{ $order_inv->total_amount }}">
-                        <input type="hidden" name="order_id" value="{{ $order_inv->id }}">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now {{$order_inv->total_amount}}</button>
-                            </div>
-                        </div>
-
-                    </form>
+            <!-- Expiration Year -->
+            <div>
+                <label for="expiration-year" class="block text-sm font-medium text-gray-700">Expiration Year</label>
+                <input type="text" id="expiration-year"  placeholder="YYYY" required class="mt-1 w-full border rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 card-expiry-year">
+            </div>
+            <div class='form-row row'>
+                <div class='col-md-12 error form-group hide'>
+                    <div class='alert-danger alert'>Please correct the errors and try
+                        again.</div>
                 </div>
             </div>
-        </div>
+            <input type="hidden" name="total_amount" value="{{ $order_inv->total_amount }}">
+                        <input type="hidden" name="order_id" value="{{ $order_inv->id }}">
+            <!-- Pay Now Button -->
+            <div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Pay Now - {{$order_inv->total_amount}}</button>
+            </div>
+        </form>
     </div>
 
-</div>
+
 
 </body>
 
