@@ -131,7 +131,7 @@ class ProductController extends Controller
         $products = Product::with('category', 'subCategory', 'childCategory')
                                 ->where('name', 'like', '%'.$request->get('query').'%')
                                 ->orWhere('slug','like', '%'.$request->get('query').'%')
-                                ->get();
+                                ->paginate(30);
 
 
         return view('frontend.shop.search', compact('products'));
