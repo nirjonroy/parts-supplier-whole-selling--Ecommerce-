@@ -4,126 +4,101 @@
 
 @endpush
 @section('content')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<div class="categoryHeader">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page" style="background:lightblue;">
+<main>
+    <section class="container mx-auto my-4 lg:my-10 px-4">
+      <h2
+        class="text-2xl lg:text-4xl font-extrabold text-gray-800 mb-10 text-center relative"
+      >
+        <span class="block">           @if(!empty($products[0]->category))
+          {{ $products[0]->category->name }}
+      @endif
+      @if(!empty($products[0]->subCategory))
+      > {{ $products[0]->subCategory->name }}
+      @endif
+      @if(!empty($products[0]->childCategory))
+      > {{ $products[0]->childCategory->name }}
+      @endif</span>
+        <span
+          class="absolute inset-x-0 -bottom-4 h-1 bg-blue-800 rounded-md transform scale-x-50 transition-transform duration-300 origin-center"
+        ></span>
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <!-- Product Card 1 -->
+        @forelse($products  as $key => $product)
+        <div
+            class="border border-gray-300 rounded-lg p-4 shadow-sm flex flex-col items-center text-center"
+          >
+        <a href="{{ route('front.product.show', [ $product->id ] ) }}">
+          <div
+            class="border border-gray-300 rounded-lg p-4 shadow-sm flex flex-col items-center text-center"
+          >
+            <img
+              src="{{ asset('uploads/custom-images2/'.$product->thumb_image) }}"
+              alt="Charging Port Flex Cable"
+              class="w-full h-32 object-contain mb-4 rounded"
+            />
+            <h3 class="text-sm lg:text-lg font-semibold text-gray-800">
+              {{ \Illuminate\Support\Str::limit($product->name, 30)}}
+            </h3>
+            @if(empty($product->offer_price))
+            <p class="text-2xl font-bold text-gray-900 my-2">${{ $product->price }}</p>
+            @else
+            <p class="text-2xl font-bold text-gray-900 my-2">${{ $product->offer_price }}</p>
+            <p class="text-2xl font-bold text-gray-900 my-2">${{ $product->price }}</p>
+            @endif
 
-            </li>
-        </ol>
-    </nav>
-</div>
 
-<style>
-    .form-check-label {
-        color: black !important;
-        font-weight: bold;
-    }
-</style>
-<div class="container-fluid">
-<div class="main-wrapper">
-    <div class="overlay-sidebar"></div>
-    <div class="category-page col-lg-12 col-12 p-0 m-auto mt-2 mb-2">
-        <div class="row">
+            @if($product->type == 'variable' || $product->prod_color == 'varcolor')
+            <a href="{{ route('front.product.show', [ $product->id ] ) }}"
+                           
+                           class="mt-4 w-full bg-blue-800 text-white py-2 rounded-md hover:bg-blue-600 transition "
+                           >
+                       Order
+                        </a>
 
-            <section class="products-box col-lg-9 col-md-12">
-                <div class="bg-white p-3 pt-1">
-                    <div class="product-bar">
-                        <div class="btn-list">
-                            @if(!empty($products[0]->category))
-                    {{ $products[0]->category->name }}
-                @endif
-                @if(!empty($products[0]->subCategory))
-                > {{ $products[0]->subCategory->name }}
-                @endif
-                @if(!empty($products[0]->childCategory))
-                > {{ $products[0]->childCategory->name }}
-                @endif
-                       
-                        </div>
-                        <div class="filter-sort d-flex align-items-center">
-                            <div class="d-flex align-items-center me-2">
+          @else
+
+          <a href="{{ route('front.check.single', ['product_id' => $product->id]) }}"
                              
-                            </div>
-                            <div class="d-lg-flex d-md-none d-none align-items-center">
-                             
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-box py-1 bg-muted row">
-                        @forelse($products  as $key => $product)
+                             class="mt-4 w-full bg-blue-800 text-white py-2 rounded-md hover:bg-blue-600 transition buy-now"
+                             data-url="{{ route('front.cart.store') }}">
+                         <i class="fas fa-shopping-cart"></i> &nbsp;  Order
+                          </a>
 
+          @endif
 
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                            <div class="product-item">
-                                <div class="product_thumb">
-                                   
-                                    <a class="secondary_img" href="{{ route('front.product.show', [ $product->id ] ) }}"><img src="{{ asset('uploads/custom-images2/'.$product->thumb_image) }}" alt=""></a>
-                                   
-                                </div>
-                                <div class="product_content ">
-                                    <h4 class="ps-1" style="height: 40px;">
-
-                                        <a href="{{ route('front.product.show', [ $product->id ] ) }}" class="font-16">{{ \Illuminate\Support\Str::limit($product->name, 30)}}</a>
-                                    </h4>
-
-                                    <div class="price_box ps-1" style="padding-bottom: 0px;">
-                                        @if(empty($product->offer_price))
-                                        <span class="current_price">${{ $product->price }}</span>
-
-                                        @else
-                                        <span class="current_price">${{ $product->offer_price }}</span>
-                                        <del class="old_price">${{ $product->price }}</del>
-
-                                        @endif
-
-                                    </div>
-                                    <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
-
-
-                                        @if($product->type == 'variable' || $product->prod_color == 'varcolor')
-                      		<a href="{{ route('front.product.show', [ $product->id ] ) }}"
-                                         style="color: white; font-size: 16px;background: red;border: solid;width: 100%;padding-top: 4%;"
-                                         class="btn btn-sm btn-warning semi "
-                                         >
-                                     Order
-                                      </a>
-                      	@else
-
-                      	<a href="{{ route('front.check.single', ['product_id' => $product->id]) }}"
-                                           style="color: white; font-size: 15px;padding-top: 4%;background: red;border: solid;width: 100%;"
-                                           class="btn btn-sm btn-warning semi buy-now"
-                                           data-url="{{ route('front.cart.store') }}">
-                                       <i class="fas fa-shopping-cart"></i> &nbsp;  Order
-                                        </a>
-
-                      	@endif
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @empty
-                                    <div align="center">
-                                        <strong class="text-center text-danger">No products are available</strong>
-                                    </div>
-                                    @endforelse
-
-                                    <div class="d-felx justify-content-center">
-
-                                        {{ $products->links() }}
-                            
-                                    </div>
-
-
-                    </div>
-                </div>
-            </section>
-        <!-- Products -->
-        </div>
+            <!-- <div class="flex items-center space-x-4 mt-2">
+              <button class="px-3 py-1 bg-gray-200 text-gray-800 rounded-md">
+                -
+              </button>
+              <span class="text-lg">0</span>
+              <button class="px-3 py-1 bg-gray-200 text-gray-800 rounded-md">
+                +
+              </button>
+            </div> -->
+            <!-- <button
+              class="mt-4 w-full bg-blue-800 text-white py-2 rounded-md hover:bg-blue-600 transition"
+            >
+              Add to Cart
+            </button> -->
+          </div>
+        </a>
     </div>
+       @empty
+                                  <div align="center">
+                                      <strong class="text-center text-danger">No products are available</strong>
+                                  </div>
+                                  @endforelse
+        <!-- Product Card 4 -->
+        
+      </div>
+    </section>
+  </main>
 
-</div>
+  <div class="d-felx justify-content-center">
+
+    {{ $products->links() }}
+
 </div>
 @endsection
 
