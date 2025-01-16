@@ -263,10 +263,7 @@ class UserController extends Controller
         return redirect()->route('admin.dashboard'); // Redirect to admin.dashboard
     }
 
-    return response()->json([
-        'status' => false,
-        'msg' => 'Invalid credentials',
-    ], 422);
+    return redirect()->back()->with('error', 'Invalid email or password')->withInput();
 }
 
 public function changeStatus($id){

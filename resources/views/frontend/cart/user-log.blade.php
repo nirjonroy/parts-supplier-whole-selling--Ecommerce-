@@ -15,34 +15,43 @@
      
      <form action="{{url('login')}}" method="POST">
       @csrf
-       <!-- Email Input -->
-       <div class="mb-4">
-         <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-         <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="you@example.com">
-         @if ($errors->has('email'))
-            <span class="help-block text-danger">
-                <strong>{{ $errors->first('email') }}</strong>
-            </span>
-        @endif
+      <!-- Email Input -->
+      <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              value="{{ old('email') }}" 
+              required 
+              class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" 
+              placeholder="you@example.com">
       </div>
- 
-       <!-- Password Input -->
-       <div class="mb-6">
-         <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
-         <input type="password" id="password" name="password" required class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter your password">
-         
-         @if ($errors->has('password'))
-            <span class="help-block text-danger">
-                <strong>{{ $errors->first('password') }}</strong>
-            </span>
-        @endif
+  
+      <!-- Password Input -->
+      <div class="mb-6">
+          <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+          <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              required 
+              class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" 
+              placeholder="Enter your password">
       </div>
- 
-       <!-- Login Button -->
-       <button type="submit" class="w-full bg-blue-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">Log In</button>
-       
       
-     </form>
+      <!-- General Error Message -->
+      @if (session('error'))
+          <div class="text-red-500 mt-2 bg-red-200">
+              {{ session('error') }}
+          </div>
+      @endif
+      <!-- Login Button -->
+      <button type="submit" class="w-full bg-blue-800 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">Log In</button>
+  
+     
+  </form>
+  
      
      <!-- Registration Link for New Users -->
      <div class="mt-6 text-center">

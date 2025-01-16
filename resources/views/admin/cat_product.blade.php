@@ -60,6 +60,8 @@
                                     <th width="10%">{{__('admin.Price')}}</th>
                                     <th width="15%">{{__('admin.Photo')}}</th>
                                     {{-- <th width="15%">{{__('admin.Type')}}</th> --}}
+                                    <th width="10%">Featured </th>
+                                    <th width="10%">Best Seller</th>
                                     <th width="10%">{{__('Active (Home)')}}</th>
                                     <th width="15%">{{__('admin.Action')}}</th>
                                   </tr>
@@ -75,6 +77,34 @@
                                         <td>{{ $setting->currency_icon }}{{ $product->price }}</td>
                                         <td> <img class="rounded-circle" src="{{ asset('uploads/custom-images/'.$product->thumb_image) }}" alt="" width="100px" height="100px"></td>
 
+
+                                        <td>
+                                          @if($product->is_recommended == 1)
+                                          <a href="javascript:;" onclick="changeProductStatus({{ $product->id }})">
+                                              <input id="status_toggle" type="checkbox" checked data-toggle="toggle" data-on="{{__('admin.Active')}}" data-off="{{__('admin.InActive')}}" data-onstyle="success" data-offstyle="danger">
+                                          </a>
+
+                                          @else
+                                          <a href="javascript:;" onclick="changeProductStatus({{ $product->id }})">
+                                              <input id="status_toggle" type="checkbox" data-toggle="toggle" data-on="{{__('admin.Active')}}" data-off="{{__('admin.InActive')}}" data-onstyle="success" data-offstyle="danger">
+                                          </a>
+
+                                          @endif
+                                      </td>
+
+                                      <td>
+                                          @if($product->is_best == 1)
+                                          <a href="javascript:;" onclick="changeBestStatus({{ $product->id }})">
+                                              <input id="status_toggle" type="checkbox" checked data-toggle="toggle" data-on="{{__('admin.Active')}}" data-off="{{__('admin.InActive')}}" data-onstyle="success" data-offstyle="danger">
+                                          </a>
+
+                                          @else
+                                          <a href="javascript:;" onclick="changeBestStatus({{ $product->id }})">
+                                              <input id="status_toggle" type="checkbox" data-toggle="toggle" data-on="{{__('admin.Active')}}" data-off="{{__('admin.InActive')}}" data-onstyle="success" data-offstyle="danger">
+                                          </a>
+
+                                          @endif
+                                      </td>
                                         <td>
                                             @if($product->status == 1)
                                             <a href="javascript:;" onclick="changeProductStatus({{ $product->id }})">
@@ -120,6 +150,11 @@
                                   @endforeach
                             </tbody>
                         </table>
+                        <div class="d-felx justify-content-center">
+
+                          {{ $cat_product->links() }}
+              
+                      </div>
                       </div>
                     </div>
                   </div>

@@ -170,6 +170,11 @@ button:hover {
         </label>
 
       </div>
+      @if (session('error'))
+      <div style="background: red; color:white; font-weight: bold; padding: 10px" class="text-red-500 mt-2 bg-red-800">
+          {{ session('error') }}
+      </div>
+      @endif
       <button type="submit">Log In</button>
       
     </form>

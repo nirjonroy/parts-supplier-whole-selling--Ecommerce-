@@ -80,7 +80,7 @@ public function __construct()
 
     public function cat_wise_product(Request $request) {
         $cat_id = $request->category_id;
-        $cat_product = Product::with('category','seller', 'brand')->where('category_id', $request->category_id)->where(['vendor_id' => 0])->orderBy('id', 'desc')->get();
+        $cat_product = Product::with('category','seller', 'brand')->where('category_id', $request->category_id)->where(['vendor_id' => 0])->orderBy('id', 'desc')->paginate(20);
         $setting = Setting::first();
         $orderProducts = OrderProduct::all();
         $frontend_url = $setting->frontend_url;
