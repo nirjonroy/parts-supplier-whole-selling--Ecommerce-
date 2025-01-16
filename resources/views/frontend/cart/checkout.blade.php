@@ -471,7 +471,7 @@
               </label>
           
               <!-- UPS Shipping Option -->
-              <label for="creditOption" class="flex items-center px-4 py-3 border border-gray-300 rounded-lg cursor-pointer transition hover:bg-gray-100 focus-within:border-blue-500">
+              <label  class="flex items-center px-4 py-3 border border-gray-300 rounded-lg cursor-pointer transition hover:bg-gray-100 focus-within:border-blue-500">
                 <input
                   type="radio"
                   name="payment_method" id="creditOption" value="credit_payment" required
