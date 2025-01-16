@@ -297,46 +297,10 @@
         </div>
       </section>
 
-      <script>
-        // Select the main image element
-        const mainImage = document.getElementById("mainImage");
-
-        // Select all thumbnail images
-        const thumbnails = document.querySelectorAll(".thumbnail");
-
-        // Add event listeners to each thumbnail
-        thumbnails.forEach((thumbnail) => {
-          thumbnail.addEventListener("click", () => {
-            // Add fade-out animation
-            mainImage.classList.add("opacity-0");
-
-            // After the fade-out completes, change the image source and fade in
-            setTimeout(() => {
-              mainImage.src = thumbnail.src;
-              mainImage.classList.remove("opacity-0");
-            }, 300); // Duration matches the CSS transition time
-          });
-        });
-      </script>
-
-      <style>
-        /* Smooth transition effect for opacity */
-        #mainImage {
-          transition: opacity 0.3s ease-in-out;
-        }
-
-        /* Hidden state for fade-out effect */
-        .opacity-0 {
-          opacity: 0;
-        }
-      </style>
+     
 @endsection
 @push('js')
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="
-   https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
-   "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 <script>
    $(document).ready(function () {
        $('.buy-now').on('click', function (e) {
