@@ -66,7 +66,7 @@
   
       <!-- Logout Button -->
       <div class="text-right">
-        <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-500 transition duration-200">Logout</button>
+        <a href="{{url('logout')}}" class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-500 transition duration-200">Logout</a>
       </div>
       
     </div>
