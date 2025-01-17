@@ -64,7 +64,8 @@ class HomeController extends Controller
         $title  = Footer::first();
         $brands = Brand::all();
         $cart = session()->get('cart', []);
-        $feature_products = Product::where('is_recommended', 1)->latest()->limit(20)->get();
+        $feature_products = Product::where('is_featured', 1)->latest()->limit(20)->get();
+        // dd($feature_products);
         $best_products = Product::where('is_best', 1)->latest()->limit(20)->get();
 
         // dd($feature_products);

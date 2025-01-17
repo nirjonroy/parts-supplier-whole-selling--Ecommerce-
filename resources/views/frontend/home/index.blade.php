@@ -130,7 +130,7 @@
         </h2>
     
         <div class="owl-carousel owl-theme">
-            @foreach ($feature_products as $product)
+            @foreach ($best_products as $product)
             <div class="item p-4">
                 <a href="{{ route('front.product.show', [ $product->id ] ) }}" class="block">
                     <div class="border rounded-lg shadow-lg py-2 overflow-hidden transition-transform duration-300 transform hover:scale-105">
